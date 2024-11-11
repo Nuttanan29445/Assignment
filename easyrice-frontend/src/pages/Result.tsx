@@ -38,7 +38,7 @@ const ResultPage: React.FC = () => {
       <div className=""></div>
       <h1 className="text-3xl font-bold mb-4 text-center">Inspection Data</h1>
       <div className="flex flex-col md:flex-row justify-center gap-4">
-        <div className="mb-4 flex items-center md:items-start flex-col gap-2">
+        <div className="mb-4 flex items-center md:items-end flex-col gap-2">
           <img
             src={riceData.imageURL}
             alt="Rice Sample"
@@ -47,13 +47,13 @@ const ResultPage: React.FC = () => {
           <div className="flex gap-2 justify-end">
             <button
               onClick={onClickBack}
-              className="px-2 py-1 bg-[#55AD9B] text-white rounded"
+              className="px-2 py-1 text-[#55AD9B]  border border-[#55AD9B] rounded hover:bg-gray-100"
             >
               Back
             </button>
             <button
               onClick={onClickEdit}
-              className="px-2 bg-[#55AD9B] text-white rounded"
+              className="px-2 bg-[#55AD9B] text-white rounded hover:bg-[#397468]"
             >
               Edit
             </button>
