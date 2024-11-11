@@ -37,7 +37,6 @@ const Table = ({ datas, config, keyFn }: TableProp) => {
     });
 
     const handleRowClick = (e: React.MouseEvent) => {
-      // Prevent navigation if the click was on a checkbox
       if ((e.target as HTMLElement).tagName === "INPUT") {
         return;
       }
